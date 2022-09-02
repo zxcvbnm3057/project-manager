@@ -10,5 +10,8 @@
     "sentence-case"
   ],
   "release-type": "base",
-  "name": "Project Manager"
+  "name": "Project Manager",
+  "packages": {
+    ".": {}
+  }
 }
