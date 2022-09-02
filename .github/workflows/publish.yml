@@ -22,8 +22,8 @@ jobs:
         uses: actions/checkout@v1
 
       - run: |
-          echo ${{ GITHUB_REF_TYPE }}
-          echo ${{ GITHUB_REF }}
+          echo ${{ env.GITHUB_REF_TYPE }}
+          echo ${{ env.GITHUB_REF }}
       # - name: Install Node and NPM
       #   uses: actions/setup-node@v3
       #   with:
