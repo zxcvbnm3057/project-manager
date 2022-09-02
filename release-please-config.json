@@ -1,0 +1,17 @@
+{
+  "extra-files": [
+    {
+      "type": "json",
+      "path": "release/app/package.json",
+      "jsonpath": "$.version"
+    }
+  ],
+  "plugins": [
+    "sentence-case"
+  ],
+  "release-type": "base",
+  "name": "Project Manager",
+  "packages": {
+    ".": {}
+  }
+}
