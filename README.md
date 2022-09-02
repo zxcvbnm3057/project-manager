@@ -6,6 +6,7 @@ A modern manager of large quantity projects of local or remote repository. Build
 
 [![Github Tag][github-tag-image]][github-tag-url]
 [![Build Status][github-actions-status]][github-actions-url]
+[![Conventional Commits][conventionalcommits-image]][conventionalcommits]
 
 </div>
 
@@ -60,3 +61,5 @@ MIT © [Electron React Boilerplate](https://github.com/electron-react-boilerplat
 [github-actions-url]: https://github.com/zxcvbnm3057/project-manager/actions
 [github-tag-image]: https://img.shields.io/github/tag/zxcvbnm3057/project-manager.svg?label=version
 [github-tag-url]: https://github.com/zxcvbnm3057/project-manager/releases/latest
+[conventionalcommits-image]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white
+[conventionalcommits]: https://conventionalcommits.org
