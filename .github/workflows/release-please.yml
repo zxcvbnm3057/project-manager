@@ -1,17 +1,31 @@
-name: Publish
-
 on:
   push:
     branches:
       - main
-
+name: release-please
 jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release-please.outputs.release_created }}
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release-please
+        with:
+          command: manifest
+          package-name: release-please-action
+          token: ${{ secrets.GH_TOKEN }}
+          # command: manifest
+
   publish:
     # To enable auto publishing to github, update your electron publisher
     # config in package.json > "build" and remove the conditional below
     # if: ${{ github.repository_owner == 'electron-react-boilerplate' }}
 
     runs-on: ${{ matrix.os }}
+
+    needs: [release-please]
+    if: needs.release-please.outputs.release_created
 
     strategy:
       matrix:

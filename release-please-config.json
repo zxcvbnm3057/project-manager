@@ -1,0 +1,14 @@
+{
+  "extra-files": [
+    {
+      "type": "json",
+      "path": "release/app/package.json",
+      "jsonpath": "$.version"
+    }
+  ],
+  "release-type": "go",
+  "name": "Project Manager",
+  "packages": {
+    ".": {}
+  }
+}
